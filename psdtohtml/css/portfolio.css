@@ -1,5 +1,6 @@
 body {
 	background: #280e19 url("../img/background.jpg") top center no-repeat;
+	font-family: "Open Sans";
 }
 
 .wrapper {
@@ -15,4 +16,30 @@ body {
 	text-align: center;
 	margin-top: 24px;
 	margin-bottom: 20px;
+}
+
+.menu {
+	background: rgba(0, 0, 0, 0.5);	
+	padding: 3px 0 3px 2px;
+	overflow: hidden;
+	border-top: 1px solid rgba(255, 255, 255, 0.2);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.menu a {
+	color: #fab5dd;
+	text-decoration: none;
+
+	display: block;
+	width: 90px;
+	float: left;
+
+	text-align: center;
+	padding: 2px;
+}	
+
+.menu a:hover {
+	color: white;
+	background: #521034;
+
 }
