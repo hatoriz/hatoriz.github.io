@@ -43,3 +43,46 @@ body {
 	background: #521034;
 
 }
+
+.slides-image 
+{
+	width: 330px;
+	float: left;
+}
+
+.slides-content {
+	width: 390px;
+	float: right;
+	margin-right: 70px;
+	margin-top: 50px;
+
+}
+
+.slides-content h2 {
+	font-size: 35px;
+	text-transform: uppercase;
+	color: white;
+}
+
+.slides-content h2 span{
+	color: #ef2793;
+}
+
+.slides-content p {
+	font-size: 12px;
+	font-family: "Arial";
+	color: #ff9ed2;
+	line-height: 1.5;
+}
+.slides-content img {
+	margin-top: 50px;
+}
+
+.row-slide {
+	background: rgba(0, 0, 0, 0.5);
+	margin-top: 10px;
+	border: 2px #561031 solid;
+	border-radius: 8px;
+}
+
+
