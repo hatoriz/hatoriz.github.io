@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Moo Moo Launching Station</title>
+	<link rel="stylesheet" href="css/style.css">	
+</head>
+
+<body>
+
+	<div class="wrapper">
+		
+		<div class="TopRow">
+			<img src="img/topheader.png">
+		</div>		
+
+		<div class="MidRow">
+
+			<div class="MidLeftRow">
+
+				<div id="results"></div>
+
+				<div id="my_camera"></div>
+
+				<!-- First, include the Webcam.js JavaScript Library -->
+				<script type="text/javascript" src="webcam.js"></script>
+
+				<!-- Configure a few settings and attach camera -->
+				<script language="JavaScript">
+					Webcam.set({
+					width: 320,
+					height: 240,
+					dest_width: 640,
+					dest_height: 480,
+					image_format: 'jpeg',
+					jpeg_quality: 90
+				});
+				Webcam.attach( '#my_camera' );
+				</script>
+
+				<form>
+					<input type=button value="Done" onClick="take_snapshot()">
+				</form>
+		
+				<!-- Code to handle taking the snapshot and displaying it locally -->
+				<script language="JavaScript">
+					function take_snapshot() {
+						// take snapshot and get image data
+						Webcam.snap( function(data_uri) {
+						// display results in page
+							document.getElementById('results').innerHTML = 
+							'<img src="'+data_uri+'"/>';
+						} );
+					}
+				</script>
+
+			
+
+			</div>
+
+			<div class="MidRightRow">
+					<!-- A button for taking snaps -->
+		
+				<h2>SCB 10X Launches New Mobile App for iPhone in the Thailand<h2>
+				
+				<h3>Rebuilt App Features Brand New Look and Navigation, 
+				Allows for Bill Payee Additions and Modifications, 
+				and Integrates with Apple WatchNew Use of Touch ID 
+				on iPhone Builds on Citi’s Password-Free Citi Mobile 
+				Snapshot Feature and Further Speeds and Simplifies Access to Accounts<h3> 
+
+
+			</div>
+
+		</div>
+
+		<div class="BottomRow">
+			<img src="img/bottom.png">
+		</div>
+		
+
+	</div>
+	
+</body>
+</html>

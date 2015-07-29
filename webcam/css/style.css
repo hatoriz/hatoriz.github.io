@@ -1,0 +1,65 @@
+
+h2 {
+	font-size: 20px;
+	color: white;
+}
+
+h3 {
+	font-size: 15px
+	color: white;
+}
+		
+form { 
+	margin-top: 15px; 
+}
+		
+form > input { 
+	margin-right: 
+	15px; 
+}
+
+#results { 
+}
+
+body { 
+	font-family: 
+	Helvetica, sans-serif; 
+	background: black;
+}
+
+.wrapper {
+	width: 1024px;
+	margin: auto;
+}
+
+.TopRow {
+	height: 160px;
+	overflow: hidden;
+}
+
+.MidRow {
+	overflow: hidden;
+}
+
+.MidLeftRow {
+	width: 640px;
+	height: 480px;
+	background: rgb(70,69,68);
+	float: left;
+	font-size: 20px;
+}
+
+.MidRightRow {
+	width: 336px;
+	height: 480px;
+	background: rgb(53,54,59);
+	float: left;
+	font-size: 10px;
+	color: white;
+}
+
+.BottomRow {
+	overflow: hidden;
+	margin-left: -25px;
+}
+
