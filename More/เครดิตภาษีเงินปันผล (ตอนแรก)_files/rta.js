@@ -1,0 +1,1 @@
+crtg_content = 'M300250=1,M320100=1,300600M,'; (function(){document.cookie = 'crtg_rta=' + escape(crtg_content) + '; path=/; expires=Wed, 03 Feb 2016 08:48:56 GMT; domain=sanook.com';})();

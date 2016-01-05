@@ -1,0 +1,300 @@
+@charset "utf-8";
+/* CSS Document */
+
+body, p, ul, li, ol, form, h1, h2, h3, h4, h5, h6, figure, figcaption { padding:0; margin:0; }
+body { font-family:Tahoma, Geneva, sans-serif; font-size:13px; background:#f6f6f6; }
+a img { border:0; }
+a { text-decoration:none; }
+ul, ol, li { list-style:none; list-style-type:none; }
+.left { display:inline; float:left; }
+.right { display:inline; float:right; }
+
+h1, h2, h3, h4, h5, h6 { font-family: psl_displayregular, Tahoma, sans-serif; font-weight:normal; font-size:40px; clear:both; overflow:hidden; }
+h1 span, h2 span, h3 span, h4 span, h5 span, h6 span { font-size:26px; background:#0F0; padding:10px; border-radius:100%; margin-right:5px; display:inline; float:left; }
+h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong { font-weight:normal; line-height:24px; margin-top:5px; display:inline-block; }
+h1 em, h2 em, h3 em, h4 em, h5 em, h6 em { font-size:12px; color:#999; font-style:normal; font-family: Tahoma, Geneva, sans-serif; line-height:16px; }
+
+#topbar { width:100%; height:42px; background:#505051; background:rgba(0,0,0,.9); }
+#topbar>ul { width:1000px; margin:0 auto; display:block; height:42px; overflow:hidden; }
+#topbar>ul>li>a>span { font-family: 'icomoon'; font-size:25px; color:#FFF; margin:1px 6px 0 10px; display:inline; float:left; }
+#topbar>ul>li>a { display:block; font-family:psl_displayregular; font-weight:normal; color:#FFF; font-size:30px; height:42px; line-height:42px; padding:0 26px 0 10px; position:relative; }
+#topbar>ul>li.menu a span { font-size:24px; margin:8px 16px 0 4px; }
+#topbar>ul>li.login a span { font-size:18px; margin:11px 6px 0 0; }
+#topbar>ul>li.signin a span { font-size:20px; margin:10px 6px 0 0; }
+#topbar>ul>li.truehit { margin:10px 10px 0 0; }
+#topbar>ul>li.fav a span { font-size:18px; margin:11px 6px 0 0; }
+#topbar>ul>li>a:hover, #topbar>ul>li>a:hover span { text-decoration:none; color:#FC0; }
+#topbar>ul>li.menu>a:before { content:""; display:block; width:30px; height:30px; border-radius:100%; border:2px solid rgba(255,255,255,.4); position:absolute; top:4px; left:8px; opacity:0; }
+#topbar>ul>li.menu>a:after { content:""; display:block; width:40px; height:40px; border-radius:100%; border:2px solid rgba(255,255,255,.4); position:absolute; top:-1px; left:3px; opacity:0; }
+#topbar>ul>li.menu>a:before { -webkit-animation: blink 5s linear 0 infinite normal;  } 
+@-webkit-keyframes blink { 0% { opacity:0; }  5% { opacity:0; } 10% { opacity:1; } 30% { opacity:0; } 100% { opacity:0; } }
+#topbar>ul>li.menu a:after { -webkit-animation: blink2 5s linear 0 infinite normal;  } 
+@-webkit-keyframes blink2 { 0% { opacity:0; }  9% { opacity:0; } 14% { opacity:1; } 34% { opacity:0; } 100% { opacity:0; } }
+#topbar>ul li.login .usernametop { font-family:psl_displayregular; font-weight:normal; color:#FFF; font-size:30px; float:right; padding:0 5px; margin:0; line-height:42px; }
+#topbar>ol.topupmenu { clear:both; position:absolute; top:42px; left:50%; margin-left:-500px; color:#FFF; background:#505051; background:rgba(0,0,0,.9); z-index:999; padding:0 10px 0; overflow:hidden; height:0; border-radius:0 0 4px 4px; width:980px;}
+#topbar>ol.topupmenu>li { width:13.8%; display:inline; float:left; margin-top:6px; font-size:14px; font-family:Tahoma;  padding:4px 2px; height:auto !important}
+#topbar>ol.topupmenu>li>a { color:#FFF; display:block;text-indent:6px; text-decoration:none;  font-size:13px; font-family:Tahoma;  height:auto !important}
+#topbar>ol.topupmenu>li>a:hover { background:#333; }
+#topbar>ol.topupmenu>li>a:before { content:"» "; }
+#topbar .loginbox { clear:both; position:absolute; top:42px; right:50%; margin-right:-500px; color:#FFF; background:#505051; background:rgba(0,0,0,.9); z-index:998; padding:0 10px 0; width:320px; height:0; overflow:hidden; border-radius:0 0 4px 4px; }
+#topbar .loginbox fieldset { border-radius:10px; margin:10px; border:1px solid #676767; padding:5px 0 10px; }
+#topbar .loginbox fieldset legend { text-align:center; font-weight:bold; color:#98D634; padding:0 10px; }
+#topbar .loginbox fieldset label { display:inline; float:left; width:80px; text-align:right; padding:6px 10px 0 0; margin-top:5px; }
+#topbar .loginbox fieldset input.input-login { display:inline; float:left; width:180px; border-radius:10px; margin-top:5px; font-size:16px; padding:3px; background:#666666; border:1px solid #000; box-shadow:0 2px 2px rgba(0,0,0,0.5) inset; color:#FFFFFF; }
+#topbar .loginbox fieldset input.input-login:focus { background:#FF9600; color:#333; outline:none; }
+#topbar .loginbox fieldset input.btn-login { margin:5px 0 0 90px; background:#4F4F4F; color:#FF9900; padding:5px 20px; border-radius:10px; border:1px solid #000; box-shadow:0 2px 2px 1px rgba(0,0,0,0.5), 0 2px 4px rgba(255,255,255,0.3) inset; cursor:pointer; }
+#topbar .loginbox fieldset input.btn-login:hover { background:#707070; }
+#topbar .loginbox .connectFB { margin:10px; }
+#topbar .loginbox .connectFB a { display:block; padding:5px 0; transition:background linear .3s; -moz-transition:background linear .3s; -webkit-transition:background linear .3s; -o-transition:background linear .3s; background:#557AC5; border-radius:10px; margin:0 5px; border:1px solid #25567C; box-shadow:0 -15px 30px rgba(52,78,133,0.9) inset, 1px 1px 1px rgba(255,255,255,.5) inset; height:40px; color:#FFF; text-shadow:0 1px 1px rgba(0,0,0,.8); font-size:20px; line-height:40px; }
+#topbar .loginbox .connectFB a span { display:inline; float:left; padding:5px 10px 5px 12px; border-right:1px solid #6589D2; margin-right:10px; font-size:28px; }
+#topbar .loginbox .connectFB a:hover { text-decoration:none; background:#70C5F5; }
+#topbar .loginnow { clear:both; position:absolute; top:42px; right:0; color:#FFF; background:#505051; background:rgba(0,0,0,.9); z-index:998; padding:0; width:260px; height:0; overflow:hidden; border-radius:0 0 4px 4px; }
+#topbar .loginnow img { display:inline; float:left; margin:10px; border:1px solid #FFF; }
+#topbar .loginnow strong { font-family:psl_displayregular; font-weight:normal; font-size:34px; margin-top:10px; }
+#topbar .loginnow strong a { color:#FFF; }
+#topbar .loginnow a.subbtn { clear:both; color:#FFF; padding:4px; display:block; background:#333; border-top:1px solid rgba(255,255,255,.1); box-shadow:0 2px 1px rgba(0,0,0,0.5); margin:6px; border-radius:4px; } 
+
+header { width:100%; height:90px; background:#6db700; }
+header #header { width:978px; height:90px; margin:0 auto; padding:0px; overflow:hidden; background:#6db700; clear:both; position:relative;}
+header #header a.kapook { display:inline; float:left; }
+header #header a.kapook img { margin:12px 0 0 0; }
+header #header a.subportal { display:inline; float:left; font-family:psl_displayregular; margin:4px 0 0 20px; font-size:76px; font-weight: bold; text-transform:uppercase; color:#FFF; }
+.logo-portal { width:400px; height:90px; position:absolute; top:20px; left:230px;  }
+.logo-portal a span.head { font-family: psl_displayregular, Tahoma, sans-serif; font-size: 80px; width: 700px; text-decoration: none; color: #FFF; font-weight: bold; clear: both; display: block; line-height: 44px; letter-spacing: 2px;}
+.logo-portal a span.des { font-size: 14px; color: #FFF; opacity: 0.6;}
+
+.fullbanner { width:970px; margin:6px auto 0; clear:both; }
+
+#nav-top { width:998px; margin:0 auto; background:#FFF; border-radius:10px 10px 0 0; border-left:1px solid #CCC; border-right:1px solid #CCC; border-top:1px solid #e9e9e9; position:relative; margin-top:4px;}
+#nav-top>ul { position:relative; height:40px; z-index:10; box-shadow:0 1px 3px rgba(0,0,0,0.2); border-radius:10px 10px 0 0; background: #ffffff; }
+#nav-top>ul>li { display:inline; float:left; border-right:1px solid #d8d8d8; }
+#nav-top>ul>li:last-child { border:0;}
+#nav-top>ul>li>a { display:block; position:relative; color:#616161; padding:0 10px; font-family: psl_displayregular, Tahoma, sans-serif; font-weight:normal; font-size:25px; line-height:41px; height:41px; }
+#nav-top>ul>li.submenu>a { padding-right:30px; position:relative;}
+#nav-top>ul>li.submenu>a:after { content:""; position:absolute; top:18px; right:8px; width:1px; height:1px; border-top:5px solid #666; border-left:5px solid transparent; border-right:5px solid transparent; }
+#nav-top>ul>li a:hover { background:#f2f2f2; }
+#nav-top>ul>li ul { display:none; visibility:hidden; background:#f2f2f2; width:200px; box-shadow:0 6px 10px rgba(0,0,0,0.2); position:absolute; top:40px; z-index:99; overflow:hidden; border-radius:0 0 10px 10px; }
+#nav-top>ul>li ul li { display:block;}
+#nav-top>ul>li ul li a { padding:5px 15px; display:block; color:#616161; font-family: psl_displayregular, Tahoma, sans-serif; font-weight:normal; font-size:25px; }
+#nav-top>ul>li ul li a:hover { background:#FFFFFF;}
+#nav-top>ul>li:hover ul { visibility:visible; display:block; }
+#nav-top p.bradecramp { clear:both; padding:8px 15px 8px; font-size:14px; color:#666; background:#f3f3f3; }
+#nav-top p.bradecramp a { color:#000; }
+#nav-top p.bradecramp a:hover { color:#900; }
+#nav-top p.bradecramp a:after { content:"  >  "; display:inline; }
+#nav-top p.bradecramp a:last-child:after { content:""; }
+
+.share-group { width:390px; float:right; display:inline-block; margin-bottom:25px; margin-top:10px;  height:40px;}
+.share-group span { font-family:Tahoma; font-size:18px; position:relative; margin:0 0 0px; color:#000; text-align:center; padding:4px 0; display:inline-block; float:left;background:#FFF; }
+
+.share-group a { text-align:center; font-weight:bold; font-size:15px; }
+
+.share-group .fb-share { width:240px; display:inline; float:left; margin:4px 3px 0 3px; }
+.share-group .fb-share a { display:block; padding:4px 0; background:#3b5998; color:#FFF; text-align:left;height:30px; -webkit-border-radius: 4px;
+border-radius: 4px;  line-height:30px;}
+
+.share-group .fb-share a img { float:left; display:inline-block; margin:5px 5px 0 18px ;width:23px; height:auto ; line-height:40px;}
+.share-group .fb-share a:before { content:"Share"; font-size:18px; font-weight:normal;  line-height:30px}
+.share-group .fb-share a span.boxCount { float:right; display:block; width:110px; line-height:23px; text-align:center ; margin-right:4px;}
+
+.share-group .tw-share { width:130px; display:inline;  float:right; margin:4px 3px 0 3px;  }
+.share-group .tw-share a { display:block; padding:4px 0; background:#00b6dd; color:#FFF;   text-align:left;height:30px; -webkit-border-radius: 4px;
+border-radius: 4px;  line-height:30px;}
+.share-group .tw-share a img { float:left; display:inline-block; margin:5px 5px 0 13px; width:23px; height:auto; line-height:40px;}
+.share-group .tw-share a:before { content:"Retweet";  font-size:18px; font-weight:normal}
+
+
+.share-group .fb-share a:hover:before { content:"แชร์ไปยังเฟซบุ๊ก";  font-size:15px; display:block; margin:0 auto; text-align:left; margin-left:5px; font-weight:bold;  height:0px;  line-height:30px}
+.share-group .tw-share a:hover:before { content:"รีทวีตสู่ทวิตเตอร์"; font-size:15px; display:block; margin:0 auto ;  text-align:left; margin-left:8px;font-weight:bold;  height:0px; line-height:30px}
+
+.share-group .fb-share a:hover img , .share-group .tw-share a:hover img  { display:none}
+
+
+.social-share { width:240px; overflow:hidden; background:#FFF; float:left; display:inline-block; margin-top:10px; height:40px ; margin-bottom:10px;  border-right:1px dashed #CCCCCC;}
+.social-share p { display:inline; float:left; text-align:center; font-weight:bold; font-size:15px; padding-bottom:2px; position:absolute ;line-height:30px; }
+.social-share p.num-view { width:185px; margin:5px 0 0; padding:5px 0;  color:#999; font-size:40px;  font-weight:bold; color:#cccccc;}
+.social-share p.num-view em {  font-style:normal; font-size:13px; font-weight:normal; color:#666; position:relative; top:0px ; right:0px; margin-left:6px;}
+
+
+
+
+
+.share-group2 { width:300px; float:right; display:inline-block; margin-bottom:15px;}
+.share-group2 span { font-family:Tahoma; font-size:16px; position:relative; margin:0 0 0px; color:#000; text-align:center; padding:2px 0; display:block; background:#FFF; }
+
+.share-group2 a { text-align:center; font-weight:bold; font-size:15px; }
+
+
+.share-group2 .fb-share { width:185px; display:inline; float:left; margin:4px 3px 0 3px; }
+.share-group2 .fb-share a { display:block; padding:4px 0; background:#3b5998; color:#FFF; text-align:left;height:30px; -webkit-border-radius: 4px;
+border-radius: 4px;  line-height:30px;}
+.share-group2 .fb-share a:before { content:"Share"; font-size:15px; font-weight:normal;  line-height:30px}
+.share-group2 .fb-share a img { float:left; display:inline-block; margin:5px 5px 0 7px ;width:23px; height:auto ; line-height:40px;}
+.share-group2 .fb-share span.boxCount { float:right; display:block; width:96px; line-height:27px; text-align:center ; margin-right:4px;}
+
+.share-group2 .tw-share { width:100px; display:inline;  float:right; margin:4px 3px 0 3px;  }
+.share-group2 .tw-share a { display:block; padding:4px 0; background:#00b6dd; color:#FFF;   text-align:left;height:30px; -webkit-border-radius: 4px;
+border-radius: 4px;  line-height:30px;}
+.share-group2 .tw-share a img { float:left; display:inline-block; margin:5px 5px 0 7px; width:23px; height:auto; line-height:40px;}
+.share-group2 .tw-share a:before { content:"Retweet";  font-size:15px; font-weight:normal}
+
+.share-group2 .li-share { width:100x; display:inline; float:left; margin:0 3px;border:3px #555 solid }
+.share-group2 .li-share a { display:block; padding:0px 0; background:#50c700; color:#FFF;  }
+.share-group2 .li-share a:before { content:"LINE"; font-size:15px; font-weight:normal}
+
+.share-group2 .fb-share a:hover:before { content:"แชร์ไปยังเฟซบุ๊ก";  font-size:10px; display:block; margin:0 auto; text-align:left; margin-left:5px; font-weight:bold;  height:0px;  line-height:30px}
+.share-group2 .tw-share a:hover:before { content:"รีทวีตสู่ทวิตเตอร์"; font-size:11px; display:block; margin:0 auto ;  text-align:left; margin-left:10px;font-weight:bold;  height:0px; line-height:30px}
+
+.share-group2 .fb-share a:hover img { display:none}
+.share-group2 .tw-share a:hover img { display:none}
+.share-group2 .gp-share  a:hover img { display:none}
+
+
+/*.share-group { width:320px; float:left; display:inline-block; margin-bottom:15px; }
+.share-group span { font-family:Tahoma; font-size:20px; position:relative; margin:0 0 0px; color:#000; text-align:center; padding:4px 0; display:block; background:#FFF; }
+.share-group a { text-align:center; font-weight:bold; font-size:15px; }
+.share-group .fb-share { width:145px; display:inline; float:left; margin:0 3px; border:3px #3b5998 solid }
+.share-group .fb-share a { display:block; padding:4px 0; background:#3b5998; color:#FFF; text-align:left;height:27px;}
+.share-group .fb-share a img { float:left; display:inline-block; margin:0 5px 0 18px}
+.share-group .fb-share a:before { content:"Share"; font-size:21px; font-weight:normal;  line-height:27px}
+.share-group .tw-share { width:145px; display:inline; float:left; margin:0 3px; border:3px #00b6dd solid}
+.share-group .tw-share a { display:block; padding:4px 0; background:#00b6dd; color:#FFF;   text-align:left;height:27px;}
+.share-group .tw-share a img { float:left; display:inline-block; margin:0 5px 0 13px}
+.share-group .tw-share a:before { content:"Retweet";  font-size:21px; font-weight:normal}
+.share-group .fb-share a:hover:before { content:"แชร์ไปยังเฟซบุ๊ก";  font-size:15px; display:block; margin:0 auto; text-align:center; font-weight:bold;  height:30px;  line-height:25px}
+.share-group .tw-share a:hover:before { content:"รีทวีตสู่ทวิตเตอร์"; font-size:15px; display:block; margin:0 auto ;  text-align:center; font-weight:bold;  height:30px; line-height:25px}
+.share-group .fb-share a:hover img { display:none}
+.share-group .tw-share a:hover img { display:none}
+.social-share { width:320px; overflow:hidden; background:#FFF; float:left; display:inline-block; margin-top:5px  }
+.social-share p { display:inline; float:left; text-align:center; font-weight:bold; font-size:15px; padding-bottom:2px; }
+.social-share p.num-view { width:159px; border-right:1px dashed #CCCCCC; margin:5px 0 0; padding:5px 0; font-weight:normal; color:#999; text-transform:uppercase; font-size:11px; }
+.social-share p.num-view em { display:block; font-weight:bold; color:#cccccc; font-style:normal; font-size:25px; text-align:center; }
+.social-share p.num-view:last-child { border:0; }
+.share-group2 { width:250px; float:right; display:inline-block; margin-bottom:15px;  }
+.share-group2 span { font-family:Tahoma; font-size:20px; position:relative; margin:0 0 0px; color:#000; text-align:center; padding:2px 0; display:block; background:#FFF; }
+.share-group2 a { text-align:center; font-weight:bold; font-size:15px; }
+.share-group2 .fb-share { width:100px; display:inline; float:left; margin:0 3px; border:3px #3b5998 solid }
+.share-group2 .fb-share a { display:block; padding:0px 0; background:#3b5998; color:#FFF;  }
+.share-group2 .fb-share a img { float:left; display:inline-block; margin:0 5px 0 18px}
+.share-group2 .fb-share a:before { content:"Share"; font-size:15px; font-weight:normal; }
+.share-group2 .tw-share { width:100px; display:inline; float:left; margin:0 3px; border:3px #00b6dd solid}
+.share-group2 .tw-share a { display:block; padding:0px 0; background:#00b6dd; color:#FFF;}
+.share-group2 .tw-share a img { float:left; display:inline-block; margin:0 5px 0 13px}
+.share-group2 .tw-share a:before { content:"Retweet";  font-size:15px; font-weight:normal}
+.share-group2 .li-share { width:100x; display:inline; float:left; margin:0 3px;border:3px #555 solid }
+.share-group2 .li-share a { display:block; padding:0px 0; background:#50c700; color:#FFF;  }
+.share-group2 .li-share a:before { content:"LINE"; font-size:15px; font-weight:normal}
+.share-group2 .fb-share a:hover:before { content:"แชร์ไปยังเฟซบุ๊ก"; padding:3px 0; font-size:10px; display:block; margin:0 auto; text-align:center; font-weight:bold}
+.share-group2 .tw-share a:hover:before { content:"รีทวีตสู่ทวิตเตอร์"; padding:3px 0; font-size:10px; display:block; margin:0 auto ;  text-align:center; font-weight:bold}
+.share-group2 .fb-share a:hover img { display:none}
+.share-group2 .tw-share a:hover img { display:none}*/
+
+#container { width:970px; margin:0 auto; background:#FFF; overflow:hidden; padding:14px; border:1px solid #CCC; border-top:0; position:relative; }
+
+.article { width:650px; display:inline; float:left; }
+.article h1 { font-size:44px; line-height:40px; border-bottom:2px solid #efefef; margin:20px 0 18px 0; }
+.article figure { padding:15px 0 10px; display:block; text-align:center; }
+.article figcaption { color:#666; }
+.article .content { font-size:16px; line-height:23px; }
+
+.aside { width:300px; display:inline; float:right; }
+.aside .credit { font-size:16px; color:#666; padding:0 0 10px; line-height:20px; }
+.aside .credit a { color:#1C8DC4;}
+.aside .credit a:hover { text-decoration:underline; color:#940002;}
+
+.aside .banner { width:300px; margin-bottom:10px; }
+.aside .related h3 { font-size:36px; font-family: psl_displayregular, Tahoma, sans-serif; color:#6c6c6c; border-bottom:1px solid #ccc; line-height:30px; margin-top:20px; }
+.aside .related h3 span { color:#FFF; background:transparent; padding:5px 0 0; }
+.aside .related ul { overflow:hidden; }
+.aside .related li { margin:5px 0; max-height:250px; overflow:hidden; border-bottom:1px solid #e5e5e5; padding:0 0 5px; list-style:none !important }
+.aside .related li a { position:relative; display:block; color:#666; }
+.aside .related li a span { width:120px; height:67px; overflow:hidden; display:inline; float:left; margin-right:5px; }
+.aside .related.vdo li a span { width:120px; height:67px; overflow:hidden; display:inline; float:left; margin-right:5px; }
+.aside .related li a span img { position:relative; width:120px; height:auto; }
+.aside .related.vdo li a span img { position:relative; top:-11px; width:120px; height:90px; }
+.aside .related li a strong { padding:6px; color:#333; font-size:13px; min-height:40px; font-weight:normal; display:block; }
+.aside .related.vdo li a span:before { display:block; content:""; border-radius:100%; position:absolute; margin:-10px 0 0 -106px; width:40px; height:40px; background:rgba(0,0,0,0.3); z-index:99; box-shadow:0 2px 4px rgba(0,0,0,0.2); top:50%; left:50%; }
+.aside .related.vdo li a span:after { display:block; content:""; position:absolute; top:50%; left:50%; margin:1px 0 0 -91px; z-index:99; width:1px; height:1px; border-left:12px solid #FFF; border-top:8px solid transparent; border-bottom:8px solid transparent; }
+.aside .related.photo { overflow:hidden; }
+.aside .related.photo li { width:33%; display:inline; float:left; border:0; text-align:center; }
+.aside .related.photo li a span { width:96px; height:96px; display:block; float:none; margin:0; }
+.aside .related.photo li a span img { width:96px; height:96px; }
+.aside .related.photo li a strong { padding:4px 0 0 0; height:30px; min-height:30px; overflow:hidden; font-size:12px; }
+
+.comment { width:650px; display:inline; float:left; }
+.comment>div:first-child{ background: #f8f8f8; padding:16px 20px; border-top:1px dashed #dcdcdc; border-bottom:1px dashed #dcdcdc}
+.comment>div:first-child strong{ font-size:20px; color:#000; font-weight: normal;}
+.comment>div:first-child strong h2 { color:#657301; display:inline; font-family:Tahoma; font-size:20px;}
+
+.tagcenter { margin:20px 10px; }
+.tagcenter .bootstrap-tagsinput { float:left; width:290px; margin:10px 0 0 0px; text-align:left;  !important; }
+.label { display: inline; padding: .2em .6em .3em; font-size: 100%; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em;}                               
+.label-info { background-color: #5bc0de; line-height:25px; }
+.tagcenter .bootstrap-tagsinput { background-color: #fff; border: 1px solid #ccc; box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); display: inline-block; padding: 4px 6px; margin-bottom: 10px; color: #555; vertical-align: middle; border-radius: 4px; max-width: 100%; line-height: 22px;}
+.tagcenter .bootstrap-tagsinput input { border: none; box-shadow: none; outline: none; background-color: transparent; padding: 0; margin: 0; width: auto !important; max-width: inherit;}
+.tagcenter .bootstrap-tagsinput input:focus { border: none; box-shadow: none;}
+.tagcenter .bootstrap-tagsinput .tag { margin-right: 2px; color: white;}
+.tagcenter .bootstrap-tagsinput .tag [data-role="remove"] { margin-left: 8px; cursor: pointer;}
+.tagcenter .bootstrap-tagsinput .tag [data-role="remove"]:after { content: "x"; padding: 0px 2px;}
+.tagcenter .bootstrap-tagsinput .tag [data-role="remove"]:hover { box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);}
+.bootstrap-tagsinput .tag [data-role="remove"]:hover:active { box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);}
+.icon-github { background: no-repeat url('../img/github-16px.png'); width: 16px; height: 16px;}
+.bootstrap-tagsinput { width: 100%; }
+.accordion { margin-bottom:-3px;}
+.accordion-group {  border: none;}
+.twitter-typeahead .tt-query,.twitter-typeahead .tt-hint { margin-bottom: 0;}
+.twitter-typeahead .tt-hint{ display: none;}
+.tt-dropdown-menu { position: absolute; top: 100%; left: 0; z-index: 1000; display: none; float: left; min-width: 160px; padding: 5px 0; margin: 2px 0 0; list-style: none; font-size: 14px; background-color: #ffffff; border: 1px solid #cccccc; border: 1px solid rgba(0, 0, 0, 0.15); border-radius: 4px; -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175); box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);background-clip: padding-box;}
+.tt-suggestion > p { display: block; padding: 3px 20px; clear: both; font-weight: normal; line-height: 1.428571429; color: #333333; white-space: nowrap;}
+.tt-suggestion > p:hover,.tt-suggestion > p:focus,.tt-suggestion.tt-cursor p { color: #ffffff; text-decoration: none; outline: 0; background-color: #428bca;}
+
+footer.footer { margin:50px 0 0; clear:both; background:#6db700; border-top:10px solid #8cde13; }
+#footer { margin:0 auto; padding:0; overflow:hidden; width:1000px; box-shadow:0 5px 10px rgba(0,0,0,0.4); padding-bottom:20px; background:#f6db700; }
+#footer ul { overflow:hidden; width:100%;  }
+#footer ul li { padding:0; color:#FFF; display:inline; float:left; width:14.5%; }
+#footer ul li.social-me { width:27.5%; }
+#footer ul li strong { font-family: psl_displayregular, Tahoma, sans-serif; font-size:30px; color:#FFF; font-weight:normal; display:block; margin:8px 16px 5px 0; border-bottom:1px solid #fff; }
+#footer ul li a { color:#FFF; display:block; padding:2px 0; }
+#footer ul li a:hover { text-indent:5px; }
+#footer .social-me strong { font-family:psl_displayregular; font-size:48px; display:block; margin:35px 10px 0 0; line-height:26px; text-align:center; border:0; }
+#footer .social-me strong a { font-family:Tahoma; font-size:12px; font-weight:normal; color:#FFF; }
+#footer .social-me p { text-align:center; }
+#footer .social-me p a { display:inline-block; margin:10px 2px; }
+#footer .social-me a span:before { font-size:24px !important; font-weight:normal; color:#8cde13; font-family: 'icomoon'; background:#FFF; padding:6px; border-radius:100%; }
+#footer .social-me a:hover { text-decoration:none; }
+#footer .social-me a:hover span:before { color:#000; text-decoration:none; }
+#footer ul li.subcategory { width:29%; }
+#footer ul li.subcategory a { display:inline; float:left; width:50%; }
+
+.sitemap { width:640px; }
+
+#action-quick { background:#6db700; padding:10px 0 0; width:100%; box-sizing:border-box; box-shadow:0 2px 20px rgba(0,0,0,0.4); position:fixed; top:0; left:0; z-index:999; }
+#action-quick .bar { width:1000px; margin:0 auto; }
+#action-quick .bar a.logo { width:150px; display:inline; float:left; margin:0 10px 0 0; }
+#action-quick .bar a.logo img { width:100%; height:auto; }
+#action-quick .bar strong { display:inline; float:left; width:530px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; padding-bottom:4px; border-bottom:1px solid rgba(255,255,255,.4); margin:0 10px 0 0; color:#FFF; font-weight:normal; font-family: psl_displayregular, Tahoma, sans-serif; font-size:32px; line-height:30px; }
+#action-quick .bar em { font-style:normal; font-size:11px; color:#FFF; display:inline-block; float:left; margin:6px 10px 0 0; padding:3px 10px 2px 0; border-right:1px solid #e9e9e9; }
+#action-quick .bar .share-group { margin-bottom:10px; float:right; }
+#action-quick .bar .share-group span { font-size:20px; margin:0; padding:5px 0; border-radius:0; }
+#action-quick .bar .share-group span:before, .bar .share-group span:after { display:none; }
+
+#totop { background:rgba(0,0,0,0.5); padding:10px; width:40px; height:40px; border-radius:100%; box-shadow:0 2px 20px rgba(0,0,0,0.4); position:fixed; bottom:20px; right:50%; margin:0 -480px 0 0; z-index:999; text-align:center; }
+#totop a { color:#FFFFFF;}
+#totop a.icon-arrow-up:before { display:block; font-size:30px; color:#FFFFFF; }
+
+#login-box { width:1px; height:1px; position:fixed; top:10%; left:50%; z-index:999; display:none; visibility:hidden; opacity:0; transition:all linear .3s; -webkit-transition:all linear 1s; }
+#login-box .popbox { border:1px solid #cfcfcf; display:block; margin:-140px 0 0 -260px; border-radius:10px; overflow:hidden; position:relative; width:520px; height:300px; border:16px solid rgba(0,0,0,0.4); box-shadow:0 2px 10px rgba(0,0,0,0.4); background:#FFF; }
+#login-box .popbox .social-login { border-bottom:1px dashed #CCC; margin:0 10px; }
+#login-box .popbox .social-login strong { font-family: psl_displayregular, Tahoma, sans-serif; font-weight:normal; font-size:42px; color:#666; display:block; padding:14px 10px 0; text-align:center; }
+#login-box .popbox .social-login p.big-login { margin:0 auto 30px; width:400px; clear:both; }
+#login-box .popbox .social-login p.big-login a:before { content:"f"; font-family: psl_displayregular, Tahoma, sans-serif; margin-right:20px; width:70px; display:inline; float:left; height:70px; font-weight:normal; font-size:80px; font-weight:bold; line-height:70px; text-align:center; border-right:1px solid rgba(255,255,255,.2); }
+#login-box .popbox .social-login p.big-login a { display:block; background:#4a67b5; border-radius:6px; font-size:50px; box-shadow:0 2px 3px rgba(0,0,0,0.4); width:400px; font-family: psl_displayregular, Tahoma, sans-serif; height:70px; line-height:70px; font-weight:normal; color:#FFF;}
+#login-box .popbox .social-login p.big-login a:hover { background:#28407f; }
+#login-box .popbox .kapook-login { margin:0 10px; }
+#login-box .popbox .kapook-login span { font-size:14px; color:#666; display:block; text-align:center;  position:relative; top:-10px; background:#f5f5f5; width:40px; margin:0 auto; }
+#login-box .popbox .kapook-login strong { font-family: psl_displayregular, Tahoma, sans-serif; font-weight:normal; font-size:30px; color:#666; display:block; padding:0 10px 0; text-align:center; }
+#login-box .popbox .kapook-login p.k-login { margin:0 auto 30px; width:300px; clear:both; }
+#login-box .popbox .kapook-login p.k-login a { display:block; background:#6db600; border-radius:6px; text-align:center; font-size:40px; box-shadow:0 2px 3px rgba(0,0,0,0.4); width:300px; font-family: psl_displayregular, Tahoma, sans-serif; height:60px; line-height:60px; font-weight:normal; color:#FFF; }
+#login-box .popbox .kapook-login p.k-login a:hover { background:#49710c; }
+#login-box:target { display:block; visibility:visible; opacity:1; top:50%; }
+#login-box .popbox .social-login a.btn-close { position:absolute; top:-4px; right:5px; background:#a1a1a1; color:#FFF; width:24px; height:24px; border-radius:100%; line-height:24px; font-size:13px; text-align:center; font-weight:bold; }

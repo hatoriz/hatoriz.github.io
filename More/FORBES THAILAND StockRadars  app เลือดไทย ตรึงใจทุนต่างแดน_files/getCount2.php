@@ -1,0 +1,1 @@
+(function(){stButtons.processCB({"clicks_total":38,"google":36,"facebook":3,"linkedin":1,"fblike":1,"twitter":1,"total":42,"shares":{"facebook":1,"linkedin":1,"all":4,"fblike":1,"twitter":1},"url":"http:\/\/www.forbesthailand.com\/article_detail.php?article_id=293","ourl":"http:\/\/www.forbesthailand.com\/article_detail.php?article_id=293#sthash.QVdK2Lcp"})})();

@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*delete popup*/
+[class*="tool-delete-popup"] [class*="btn-ok"], [class*="tool-delete-popup"] [class*="comment-closeblockui"] { background-image: url(../../di/discussion/discussion2013.png); background-repeat: no-repeat;}
+[class*="tool-delete-popup"] [class*="btn-ok"] { width: 66px; height: 30px; display: block; text-indent: -9999px; margin: 20px auto 0; background-position: -207px -690px;}
+[class*="tool-delete-popup"] [class*="btn-ok"]:hover { background-position: -207px -756px;}
+[class*="blockPage"] { -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.3);
+box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.3);}
+[class*="comment-closeblockui"] { position: absolute; right: -15px; width: 38px; height: 38px; display: block; text-indent: -9999px; background-image: url(../../di/discussion/discussion2013.png); background-repeat: no-repeat; background-position: -207px -822px;}
+[class*="tool-delete-popup"] { display: none; font-family: sukhumvitbold; font-size: 24px; font-family: sukhumvitbold; }
+[class*="tool-delete-popup"] span { display: block;}
+[class*="comment-closeblockui"] { position: absolute; right: -15px; width: 38px; height: 38px; text-indent: -9999px; background-position: -207px -822px;}
+[class*="tool-delete-popup"] [class*="comment-closeblockui"] { top: -20px;}
